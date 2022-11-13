@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1_Ex4_MdiApplication", "Lab1_Ex4_MdiApplication.csproj", "{2BF0FBDA-895B-447C-9C7A-BC3B6F553425}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BF0FBDA-895B-447C-9C7A-BC3B6F553425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF0FBDA-895B-447C-9C7A-BC3B6F553425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF0FBDA-895B-447C-9C7A-BC3B6F553425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF0FBDA-895B-447C-9C7A-BC3B6F553425}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3615BA35-14DD-41A4-88F2-BAD7D26B8682}
+	EndGlobalSection
+EndGlobal
