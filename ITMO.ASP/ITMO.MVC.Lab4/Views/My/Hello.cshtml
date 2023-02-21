@@ -1,0 +1,12 @@
+﻿@model ITMO.MVC2023.Task01.Models.Person
+
+@{
+    ViewBag.Title = "Hello";
+}
+
+<div>
+    <h1>Здравствуйте, @Model.ToString()!</h1>
+    <p>
+        @Html.ActionLink("На главную", "Index")
+    </p>
+</div>

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Главная";
+}
+
+<!DOCTYPE html>
+
+<div>
+    @ViewBag.Greeting, спасибо, что зашли
+    <p>
+        @Html.ActionLink("Введите имя", "InputData")
+    </p>
+    <p>
+        @Html.ActionLink("Посмотрите, кто уже здесь", "OutputData")
+    </p>
+</div>

@@ -1,0 +1,74 @@
+﻿.auto-style6 {
+    width: 80%;
+}
+
+.auto-style3 {
+    height: 250px;
+    width: 400px;
+}
+
+.auto-style4 {
+    height: 350px;
+    width: 18px;
+}
+
+.auto-style5 {
+    height: 350px;
+}
+
+.auto-style-menu {
+    height: 100px;
+    width: 130px;
+}
+
+h1, h2 {
+    margin: 0px;
+    padding: 2px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#form1 label {
+    width: 350px;
+    display: inline-block;
+}
+
+#form1 input {
+    margin: 10px;
+    margin-left: 4px;
+    width: 250px;
+}
+
+#form1 select {
+    margin: 2px 0;
+    width: 57px;
+}
+
+button[type=submit] {
+    padding: 5px;
+    margin: 0px 0px 0px 400px;
+}
+
+table, td, th {
+    border: thin solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+    margin: 50px 50px;
+}
+
+.footer_menu li {
+    margin: 0px;
+    padding: 0 20px;
+    display: inline;
+    border-right: 1px solid #000000;
+}
+
+.footer {
+    font-size: 18px;
+    text-align: left;
+}
+
+.menu menuitem {
+    border-right: 1px solid #000000;
+}
