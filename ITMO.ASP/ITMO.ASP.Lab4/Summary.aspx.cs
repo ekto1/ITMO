@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
 
-namespace ITMO.ASP2023.Task01
+namespace ITMO.ASP.Task01
 {
     public partial class Summary : System.Web.UI.Page
     {

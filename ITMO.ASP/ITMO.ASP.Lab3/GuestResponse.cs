@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ITMO.ASP2023.Task01
+namespace ITMO.ASP.Task01
 {
     public class GuestResponse
     {

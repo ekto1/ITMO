@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ITMO.ASP2023.Task01
+namespace ITMO.ASP.Task01
 {
     public partial class Site : System.Web.UI.MasterPage
     {

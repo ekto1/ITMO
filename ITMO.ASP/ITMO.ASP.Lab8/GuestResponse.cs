@@ -5,7 +5,7 @@ using System.Web;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 
-namespace ITMO.ASP2023.Task01
+namespace ITMO.ASP.Task01
 {
     public class GuestResponse
     {

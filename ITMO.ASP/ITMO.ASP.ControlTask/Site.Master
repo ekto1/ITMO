@@ -3,47 +3,47 @@
 <!DOCTYPE html>
 <html>
 <head runat="server">
-    <title>Student performance</title>
+    <title>Student's academic performance</title>
     <link rel="stylesheet" type="text/css" href="Style.css" />
     <style type="text/css">
         .auto-style1 {
-            width: 80%;
+            width: 900%;
             height: 80%;
             margin-left: auto;
             margin-right: auto;
             align-items: center
         }
         .auto-style5 {
-            height: 600px;
+            height: 650px;
         }
         .auto-style-menu {
-            height: 450px;
-            width: 20px;
+            height: 500px;
+            width: 50px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style1">
+            <table class="auto-style2">
                 <tr>
-                    <td colspan="2" style="height: 50px"><h2>Students' Scores App</h2>
+                    <td colspan="2" style="height: 50px"><h2>Student's scores</h2>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style-menu">
                         <h1 class="text-center">Menu</h1>
                         <div class="menu">
-                            <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" Orientation="Vertical" ForeColor="Black">
+                            <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" Orientation="Vertical" ForeColor="Green">
                                 <Items>
-                                    <asp:MenuItem NavigateUrl="~/AddStudent.aspx" Text="Add Student" />
-                                    <asp:MenuItem NavigateUrl="~/Scores.aspx" Text="Scores Table" />
-                                    <asp:MenuItem NavigateUrl="~/Rating.aspx" Text="Best/Worst Students" />
+                                    <asp:MenuItem NavigateUrl="~/AddStudent.aspx" Text="Add student" />
+                                    <asp:MenuItem NavigateUrl="~/Scores.aspx" Text="Scores table" />
+                                    <asp:MenuItem NavigateUrl="~/Rating.aspx" Text="Best/Worst students" />
                                 </Items>
                             </asp:Menu>
                         </div>
                     </td>
-                    <td class="auto-style5">
+                    <td class="auto-style3">
                         <asp:ContentPlaceHolder ID="MainContent" runat="server">
                         </asp:ContentPlaceHolder>
                     </td>

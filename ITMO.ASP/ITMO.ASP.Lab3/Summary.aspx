@@ -1,5 +1,5 @@
 ﻿<%@ Import Namespace="ITMO.ASP2023.Task01" %>
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="ITMO.ASP2023.Task01.Summary" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="ITMO.ASP.Task01.Summary" %>
 
 <!DOCTYPE html>
 

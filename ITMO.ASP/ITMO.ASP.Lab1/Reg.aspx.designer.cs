@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ITMO.ASP2023.Task01
+namespace ITMO.ASP.Task01
 {
 
 
