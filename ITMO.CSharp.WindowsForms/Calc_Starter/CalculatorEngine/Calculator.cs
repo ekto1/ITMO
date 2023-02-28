@@ -16,7 +16,8 @@ namespace Calculator
 			eAdd = 1,
 			eSubtract = 2,
 			eMultiply = 3,
-			eDivide = 4
+			eDivide = 4,
+			ePow = 5
 		}
 
 		//
@@ -171,7 +172,12 @@ namespace Calculator
 						validEquation = true;
 						break;
 
-					default:
+					case Operator.ePow:
+						numericAnswer = Math.Pow(firstNumber, secondNumber);
+                        validEquation = true;
+                        break;
+
+                    default:
 						validEquation = false;
 						break;
 				}
