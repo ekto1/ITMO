@@ -20,7 +20,7 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
             ControlToValidate="lastname"
             ErrorMessage="Fill the last name"
-            ForeColor="Black">You have to fill this field
+            ForeColor="Red">You have to fill this field
         </asp:RequiredFieldValidator>
     </div>
     <div>
