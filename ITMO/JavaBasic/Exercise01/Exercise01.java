@@ -32,7 +32,7 @@ public class Exercise01 {
         System.out.println(d2);
         System.out.println(d3);
 
-        int e = 2;
+        int e = scanner.nextInt();
         if (e % 2 != 0 && e < 100){
             System.out.println("Нечетное");
         }else if (e < 100){
