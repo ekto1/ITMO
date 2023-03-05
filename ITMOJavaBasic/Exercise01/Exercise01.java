@@ -1,4 +1,4 @@
-package ITMO.JavaBasic.Exercise01;
+package ITMOJavaBasic.Exercise01;
 
 import java.util.Scanner;
 
