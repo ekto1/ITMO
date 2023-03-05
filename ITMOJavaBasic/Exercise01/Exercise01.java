@@ -15,7 +15,7 @@ public class Exercise01 {
         System.out.println(primer2);
 
         int number = 10500;
-        int result = (number / 10) / 10;
+        double result = (double) number / 10 / 10;
         System.out.println(result);
 
         double a = 3.6;
