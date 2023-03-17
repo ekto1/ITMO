@@ -20,32 +20,27 @@ public class Exercise05 {
     }
 
     //Написать метод, который проверяет является ли слово палиндромом
-    public static boolean palindrom(){
+    public static boolean palindrom(String anyWord){
 
-        String word = "шалаш";
-        char[] chars = word.toCharArray();
-        int count = word.length() - 1;
+        String word = anyWord.toLowerCase();
+        StringBuilder inputWord = new StringBuilder();
+        inputWord.append(word);
 
-        for (int i = 0; i < word.length() / 2; i++) {
-            if (chars[i] == chars[count]) {
-                count--;
-            }else{
-                return false;
+        if (word.equals(inputWord.toString())) {
+            return true;
             }
-        }
-        return true;
+        return false;
     }
 
     //Напишите метод, заменяющий в тексте все вхождения слова «бяка» на «[вырезано цензурой]»
-    public static void changeByaka() {
-        String text = "с помощью этой бяка конструкции мы можем объявить ресурсыбяка, которые будут использоваться бяка в try-блоке, и эти ресурсы будут бяка автоматиески закрыты по окончании выполнения try-блока. Ресурсом будем называть объект, являющийся экземпляром класса, который реализует интерфейс java";
-        String replaceText = text.replaceAll("бяка", "[вырезано цензурой]");
+    public static void changeByaka(String text, String regex, String replacement) {
+        String replaceText = text.replaceAll(regex, replacement);
         System.out.println(replaceText);
     }
 
     //Имеются две строки. Найти количество вхождений одной (являющейся подстрокой) в другую
-    public static void countSubString() {
-        String str = "кукhкукуkjefhкуkjhefку";
+    public static void countSubString(String str) {
+
         System.out.println(str);
         String substring = str.substring(0, 2);
         System.out.println(substring);
@@ -56,8 +51,8 @@ public class Exercise05 {
     }
 
     //Напишите метод, который инвертирует слова в строке
-    public static void changeSide() {
-        String text = "This is a test string";
+    public static void changeSide(String text) {
+
         System.out.println("The given string is: " + text);
         System.out.print("The string reversed word by word is: ");
 

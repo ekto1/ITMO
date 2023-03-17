@@ -84,9 +84,7 @@ public class Part01 {
 
     //Напишите программу, чтобы проверить, появляется ли число 3 как первый или последний элемент массива целых чисел
 
-    public static boolean checkNumber(){
-
-        int [] array = {3, -3, 7, 4, 5, 4, 3};
+    public static boolean checkNumber(int[] array){
 
         System.out.println("array = " + Arrays.toString(array));
 
@@ -97,10 +95,7 @@ public class Part01 {
     }
 
     //Напишите программу, чтобы проверить, что массив содержит число 1 или 3.
-    public static boolean checkNumb1or3() {
-
-        //int [] array = {0, -3, 7, 4, 5, 4, 9};
-        int [] array = {1, -3, 7, 4, 5, 4, 9};
+    public static boolean checkNumb1or3(int[] array) {
 
         System.out.println("array = " + Arrays.toString(array));
 
@@ -111,4 +106,5 @@ public class Part01 {
         }
         return false;
     }
+
 }

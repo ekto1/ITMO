@@ -6,13 +6,10 @@ import java.util.Scanner;
 public class Part02 {
 
     //Напишите программу, которая проверяет отсортирован ли массив по возрастанию
-    public static void checkArray() {
-
-        //int [] array = {0, 3, 7, 4, 5, 4, 9};
-        int [] array = {0, 1, 2, 4, 5, 7, 9};
+    public static void checkArray(int[] array) {
 
         for (int i = 0; i < (array.length - 1); i++) {
-            if (array [i] > array [i + 1]) {
+            if (array[i] > array[i + 1]) {
                 System.out.println("Please, try again");
                 return;
             }
@@ -35,8 +32,8 @@ public class Part02 {
     }
 
     //Напишите метод, который меняет местами первый и последний элемент массива.
-    public static void arrayChange() {
-        int[] array = {5, 6, 7, 2};
+    public static void arrayChange(int[] array) {
+
         System.out.println("Array 1: " + Arrays.toString(array));
 
         int first = array[0];
@@ -48,8 +45,7 @@ public class Part02 {
     }
 
     //Найдите первое уникальное в этом массиве число
-    public static void arrayUnique() {
-        int[] array = {1, 2, 3, 1, 2, 4, 5};
+    public static void arrayUnique(int[] array) {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 1; j < array.length; j++) {
