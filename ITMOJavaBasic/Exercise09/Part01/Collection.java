@@ -18,11 +18,11 @@ public class Collection{
         collection.add(23);
         collection.add(23);
 
-        Set<Integer> uniqueCollection = new HashSet<>(collection);
+        Set<Integer> uniqueCollection = removeDuplicates(collection);
         System.out.println(uniqueCollection);
     }
 
-
-
-
+    public static Set<Integer> removeDuplicates(List<Integer> collection) {
+        return new HashSet<>(collection);
+    }
 }
