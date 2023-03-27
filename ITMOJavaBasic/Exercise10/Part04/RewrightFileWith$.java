@@ -9,25 +9,15 @@ public class RewrightFileWith$ {
     }
 
     public static void rewrightFileWith$(String inputFile, String outputFile) {
-        try(
-                BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-                BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))
-                ){
+        try(BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
+
             String line;
-            while((line = reader.readLine()) != null){
+            while((line = reader.readLine()) != null) {
 
-                StringBuilder modifiedLine = new StringBuilder();
+                String replacedLine = line.replaceAll("[^\\p{L}\\p{N}]", "\\$");
 
-                for (char ch : line.toCharArray()) {
-
-                    if (Character.isLetterOrDigit(ch)) {
-                        modifiedLine.append(ch);
-                    } else {
-                        modifiedLine.append('$');
-                    }
-                }
-
-                writer.write(modifiedLine.toString());
+                writer.write(replacedLine);
                 writer.newLine();
             }
         }catch (IOException e){
