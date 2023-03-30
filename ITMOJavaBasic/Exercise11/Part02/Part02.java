@@ -1,5 +1,6 @@
 package ITMOJavaBasic.Exercise11.Part02;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.CountDownLatch;
 
 class Counter {
     private AtomicInteger count = new AtomicInteger(0);
@@ -21,20 +22,21 @@ public class Part02 {
     }
 
     public static void startThreads(Counter counter) throws InterruptedException {
-        Thread[] threads = new Thread[100];
+        int numThreads = 100;
+        CountDownLatch latch = new CountDownLatch(numThreads);
+        Thread[] threads = new Thread[numThreads];
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < numThreads; i++) {
             threads[i] = new Thread(() -> {
                 for (int j = 0; j < 1000; j++) {
                     counter.increment();
                 }
+                latch.countDown();
             });
             threads[i].start();
         }
-
-        for (Thread thread : threads) {
-            thread.join();
+        latch.await();
         }
     }
-}
+
 
