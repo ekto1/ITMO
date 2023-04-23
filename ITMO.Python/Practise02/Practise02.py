@@ -37,8 +37,6 @@ class TestCalculateTimeToReachDrowningPerson(unittest.TestCase):
         expected = 2.5
         self.assertAlmostEqual(result, expected, delta=0.1)
 
-        # Можно добавить больше тестовых случаев, если это необходимо
-
 
 def run_tests():
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
